@@ -57,13 +57,13 @@ export function Navbar() {
 
       <header
         className={cn(
-          "fixed left-0 right-0 top-0 z-50 transition-all duration-500",
+          "fixed inset-x-0 top-0 z-50 w-full max-w-[100vw] overflow-x-clip transition-all duration-500",
           scrolled
             ? "bg-background/80 backdrop-blur-xl border-b border-line/60 py-3"
             : "bg-transparent py-5"
         )}
       >
-        <nav className="mx-auto flex w-full max-w-7xl items-center justify-between px-2.5 sm:px-4 lg:px-5">
+        <nav className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           {/* Logo / Monogram */}
           <a
             href="#home"
@@ -129,7 +129,7 @@ export function Navbar() {
           <button
             aria-label="Toggle menu"
             onClick={() => setOpen((o) => !o)}
-            className="lg:hidden grid h-10 w-10 place-items-center rounded-xl border border-line bg-white/60 backdrop-blur"
+            className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-line bg-white/60 backdrop-blur lg:hidden"
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
@@ -144,7 +144,7 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="fixed inset-0 z-40 lg:hidden"
+            className="fixed inset-y-0 left-0 z-40 w-screen max-w-[100vw] overflow-x-hidden lg:hidden"
           >
             <div
               className="absolute inset-0 bg-ink/30 backdrop-blur-sm"
@@ -155,7 +155,7 @@ export function Navbar() {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -20, opacity: 0 }}
               transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="absolute left-4 right-4 top-24 rounded-3xl border border-line bg-background p-3 shadow-2xl"
+              className="absolute left-4 right-4 top-20 max-w-[calc(100vw-2rem)] rounded-2xl border border-line bg-background p-3 shadow-2xl"
             >
               <div className="flex flex-col">
                 {NAV_LINKS.map((link, i) => (

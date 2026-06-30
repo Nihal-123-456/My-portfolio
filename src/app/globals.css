@@ -123,11 +123,13 @@
   html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+    overflow-x: clip;
   }
   body {
     @apply bg-background text-foreground antialiased;
     font-feature-settings: "ss01", "cv01", "cv11";
     text-rendering: optimizeLegibility;
+    overflow-x: clip;
   }
   ::selection {
     background: var(--blue-soft);
