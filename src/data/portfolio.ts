@@ -590,6 +590,43 @@ export const PROJECTS: Project[] = [
     color: "orange",
     accentGradient: "from-orange-400/30 via-orange-500/10 to-transparent",
   },
+  {
+    title: "GroceryCart",
+    category: "Full-Stack Real-Time E-Commerce Platform",
+    year: "2026",
+    description:
+      "A full-stack Next.js 16 grocery delivery platform with three user roles (customer, admin, delivery man), real-time order tracking via a separate Socket.IO server, Stripe and COD payments, OTP-based delivery verification, geospatial rider assignment, and live chat between customers and delivery personnel.",
+    features: [
+      "NextAuth credentials + Google OAuth",
+      "Role-based access (User / Admin / Delivery)",
+      "Real-time order tracking via Socket.IO",
+      "Stripe + Cash-on-Delivery payments",
+      "Geospatial delivery assignment (MongoDB 2dsphere)",
+      "OTP-based delivery verification",
+      "Live chat between customer & rider",
+      "Leaflet map with live GPS tracking",
+    ],
+    technologies: [
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "Socket.IO",
+      "MongoDB",
+      "NextAuth v5",
+      "Redux Toolkit",
+      "Stripe",
+      "Leaflet",
+      "Tailwind CSS v4",
+    ],
+    contributions: [
+      "Designed and developed the entire application independently.",
+    ],
+    links: [
+      { label: "Live Demo", href: "https://e-commerce-demo-lovat.vercel.app/", primary: true },
+    ],
+    color: "blue",
+    accentGradient: "from-blue-400/30 via-blue-500/10 to-transparent",
+  },
 ];
 
 /* ────────────────────────────────────────────────────────────
